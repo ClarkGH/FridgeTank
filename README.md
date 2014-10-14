@@ -12,11 +12,16 @@ Have you ever wanted to make a specific recipe, end up buying all of the ingredi
 
 Possible Recipe API's
 ===
-BigOven
-Yummly
-Food2Fork
-Spoonacular
-Misc: http://www.programmableweb.com/apis/directory/1?apicat=Food
+#1 choice. BigOven: http://api.bigoven.com/
+#2 choice. Yummly: https://developer.yummly.com/
+#3 choice. Food 2 Fork: http://food2fork.com/about/api
+#4 choice. Recipe Bridge: http://www.recipebridge.com/api
+#5 choice. Recipal: https://www.recipal.com/api-docs
+
+
+Kitchenmonki: http://www.kitchenmonki.com/api
+Spoonacular - uses webknox
+RecipePuppy: http://www.recipepuppy.com/api/ and http://www.recipepuppy.com/about/api/
 
 ---
 
@@ -27,5 +32,3 @@ Stretch Goals
 2. Setting a budget and working within that budget.
 
 3. Giving more variety based on the ingredients ( want to make ranch eggs, get other egg based recipes using similar ingredients)
-
-4.
