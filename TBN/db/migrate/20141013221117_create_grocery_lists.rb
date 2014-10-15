@@ -1,6 +1,6 @@
-class CreateLists < ActiveRecord::Migration
+class CreateGroceryLists < ActiveRecord::Migration
   def change
-    create_table :lists do |t|
+    create_table :grocery_lists do |t|
       t.string :name
 
       t.belongs_to :user
