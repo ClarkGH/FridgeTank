@@ -13,7 +13,12 @@ class UsersController < ApplicationController
   end
 
   def create
-    redirect_to root_path
+    @user = User.new(user_params)
+    if @user.save
+      redirect_to root_path, :notice => "Signed up!"
+    else
+      redirect_to root_path
+    end
   end
 
   def update
@@ -21,5 +26,12 @@ class UsersController < ApplicationController
 
   def destroy
   end
+
+  private
+
+  def user_params
+    params.require(:user).permit(:email, :password, :password_confirmation)
+  end
+
 
 end

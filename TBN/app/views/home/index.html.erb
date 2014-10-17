@@ -15,12 +15,26 @@
           <ul class="nav navbar-nav">
             <li><a href="#myRecipies">Recipies</a></li>
             <li><a href="#myContact">Contact FridgeTank!</a></li>
+            <% unless logged_in? %>
             <li><a data-toggle="modal" data-target="#loginModal">Login</a></li>
+            <% else %>
+            <li><%= link_to "Log Out", log_out_path %></li>
+            <% end %>
           </ul>
         </div><!-- end navbar-collapse-->
       </div>
     </div><!-- end Navbar -->
 
+<div>
+</br>
+</br>
+</br>
+  <% if logged_in? %>
+   <h1>You're in!</h1>
+    <% else %>
+   <h1>You're not...</h1>
+  <% end %>
+</div>
 
 
 
@@ -30,6 +44,7 @@
     <!-- Modals -->
 
     <!-- Login -->
+    <% unless logged_in? %>
     <div class="modal fade" id="loginModal">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -37,7 +52,7 @@
             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
             <h1>Log in</h1>
 
-            <%= form_tag sessions_path do %>
+            <%= form_tag log_in_path do %>
             <p>
               <%= label_tag :email %><br />
               <%= text_field_tag :email, params[:email] %>
@@ -86,3 +101,4 @@
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+<% end %>
