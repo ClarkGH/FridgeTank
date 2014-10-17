@@ -5,6 +5,9 @@ class GroceryListsController < ApplicationController
   end
 
   def show
+    @list = GroceryList.find(params[:id])
+    redirect_to grocery_lists_path if @list.user != current_user
+    @list
   end
 
   def new
