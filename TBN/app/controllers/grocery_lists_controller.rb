@@ -23,6 +23,8 @@ class GroceryListsController < ApplicationController
   end
 
   def destroy
+    GroceryList.destroy(params[:id])
+    redirect_to grocery_lists_path, :flash => { :success => "List deleted." }
   end
 
 end
