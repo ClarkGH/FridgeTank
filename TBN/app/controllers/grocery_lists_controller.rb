@@ -1,6 +1,7 @@
 class GroceryListsController < ApplicationController
 
   def index
+    @lists = GroceryList.where('user_id = ?', session[:id])
   end
 
   def show
