@@ -1,0 +1,88 @@
+  <div>
+    <!-- Navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img src="imgs/logo.png" alt="Logo Text!"></a>
+        </div><!-- end navbar-header -->
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#myRecipies">Recipies</a></li>
+            <li><a href="#myContact">Contact FridgeTank!</a></li>
+            <li><a data-toggle="modal" data-target="#loginModal">Login</a></li>
+          </ul>
+        </div><!-- end navbar-collapse-->
+      </div>
+    </div><!-- end Navbar -->
+
+
+
+
+
+
+
+    <!-- Modals -->
+
+    <!-- Login -->
+    <div class="modal fade" id="loginModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h1>Log in</h1>
+
+            <%= form_tag sessions_path do %>
+            <p>
+              <%= label_tag :email %><br />
+              <%= text_field_tag :email, params[:email] %>
+            </p>
+            <p>
+              <%= label_tag :password %><br />
+              <%= password_field_tag :password %>
+            </p>
+            <p class="button"><%= submit_tag "Log in" %></p>
+            <% end %>
+          </div>
+          <div class="modal-body">
+
+            <h1>Sign Up</h1>
+            <%= form_for @user do |f| %>
+            <% if @user.errors.any? %>
+            <div class="error_messages">
+              <h2>Form is invalid</h2>
+              <ul>
+                <% for message in @user.errors.full_messages %>
+                <li><%= message %></li>
+                <% end %>
+              </ul>
+            </div>
+            <% end %>
+
+            <p>
+              <%= f.label :email %><br />
+              <%= f.text_field :email %>
+            </p>
+            <p>
+              <%= f.label :password %><br />
+              <%= f.password_field :password %>
+            </p>
+            <p>
+              <%= f.label :password_confirmation %><br />
+              <%= f.password_field :password_confirmation %>
+            </p>
+            <p class="button"><%= f.submit %></p>
+            <% end %>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default rs-orange" data-dismiss="modal">Close</button>
+          </div>
+
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
