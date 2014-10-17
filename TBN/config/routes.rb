@@ -55,4 +55,8 @@ Rails.application.routes.draw do
   #   end
   root 'home#index'
   resources :grocery_lists, :path => "lists"
+  resources :users
+  get "log_out" => "sessions#destroy", :as => "log_out"
+  post "log_in" => "sessions#create", :as => "log_in"
+  resources :sessions
 end
