@@ -1,7 +1,10 @@
 class GroceryListsController < ApplicationController
+  respond_to :html, :except => [:index]
+  respond_to :json
 
   def index
-    @lists = GroceryList.where('user_id = ?', session[:id])
+    @lists = User.find(current_user.id).grocery_lists
+    respond_with(@lists)
   end
 
   def show
