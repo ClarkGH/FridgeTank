@@ -13,11 +13,12 @@
         </div><!-- end navbar-header -->
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#myRecipies">Recipies</a></li>
+            <li><a href="#myRecipies">Recipes</a></li>
             <li><a href="#myContact">Contact FridgeTank!</a></li>
             <% unless logged_in? %>
             <li><a data-toggle="modal" data-target="#loginModal">Login</a></li>
             <% else %>
+            <li><a href="#" id="get-lists">View my lists</a></li>
             <li><%= link_to "Log Out", log_out_path %></li>
             <% end %>
           </ul>
