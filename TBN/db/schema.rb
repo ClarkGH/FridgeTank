@@ -14,8 +14,8 @@
 ActiveRecord::Schema.define(version: 20141013222048) do
 
   create_table "grocery_list_ingredients", force: true do |t|
-    t.integer  "grocery_lists_id"
-    t.integer  "ingredients_id"
+    t.integer  "grocery_list_id"
+    t.integer  "ingredient_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -34,8 +34,8 @@ ActiveRecord::Schema.define(version: 20141013222048) do
   end
 
   create_table "recipe_ingredients", force: true do |t|
-    t.integer  "recipes_id"
-    t.integer  "ingredients_id"
+    t.integer  "recipe_id"
+    t.integer  "ingredient_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -46,7 +46,7 @@ ActiveRecord::Schema.define(version: 20141013222048) do
     t.string   "total_time"
     t.string   "directions"
     t.string   "category"
-    t.integer  "users_id"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -7,7 +7,7 @@ class CreateRecipes < ActiveRecord::Migration
       t.string :directions
       t.string :category
 
-      t.belongs_to :users
+      t.belongs_to :user
       t.timestamps
     end
   end
