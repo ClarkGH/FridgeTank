@@ -12,11 +12,11 @@ Have you ever wanted to make a specific recipe, end up buying all of the ingredi
 
 **Possible Recipe API's**
 
-#1 BigOven: http://api.bigoven.com/
-#2 Yummly: https://developer.yummly.com/
-#3 Food 2 Fork: http://food2fork.com/about/api
-#4 Recipe Bridge: http://www.recipebridge.com/api
-#5 Recipal: https://www.recipal.com/api-docs
+1. BigOven: http://api.bigoven.com/
+2. Yummly: https://developer.yummly.com/
+3. Food 2 Fork: http://food2fork.com/about/api
+4. Recipe Bridge: http://www.recipebridge.com/api
+5. Recipal: https://www.recipal.com/api-docs
 
 
 Kitchenmonki: http://www.kitchenmonki.com/api
