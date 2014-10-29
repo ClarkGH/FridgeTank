@@ -10,13 +10,13 @@ Have you ever wanted to make a specific recipe, end up buying all of the ingredi
 
 ---
 
-Possible Recipe API's
-===
-#1 choice. BigOven: http://api.bigoven.com/
-#2 choice. Yummly: https://developer.yummly.com/
-#3 choice. Food 2 Fork: http://food2fork.com/about/api
-#4 choice. Recipe Bridge: http://www.recipebridge.com/api
-#5 choice. Recipal: https://www.recipal.com/api-docs
+**Possible Recipe API's**
+
+1. BigOven: http://api.bigoven.com/
+2. Yummly: https://developer.yummly.com/
+3. Food 2 Fork: http://food2fork.com/about/api
+4. Recipe Bridge: http://www.recipebridge.com/api
+5. Recipal: https://www.recipal.com/api-docs
 
 
 Kitchenmonki: http://www.kitchenmonki.com/api
@@ -25,8 +25,10 @@ RecipePuppy: http://www.recipepuppy.com/api/ and http://www.recipepuppy.com/abou
 
 ---
 
-Stretch Goals
-===
+**Stretch Goals**
+
+---
+
 1. Linking to an application where you can purchase ingredient. (Apps like instacart)
 
 2. Setting a budget and working within that budget.
